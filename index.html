@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>CFDMF</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/public.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/echarts.min.js"></script>
+	</head>
+
+	<body>
+		<header id="bignav"><iframe class="my_header" src="header.html"></iframe></header>
+		<section class="banner secmargin">
+			<div class="inner">
+				<div class="slider">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<img src="img/index/146849039717626.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/index/146849024537103.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/index/146849039717626.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/index/146849024537103.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/index/154201428931197.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/index/146849039717626.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+					<!--左右箭头
+				<div class="arrow">
+				  <span class="arrow-left">&lt;</span>
+				  <span class="arrow-right">&gt;</span>
+				</div>-->
+					<!-- 小圆点按钮 -->
+					<div class="focus">
+						<i class="current"></i>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</div>
+			</div>
+			<div class="main_banner">
+				<div class="main_banner_bg"></div>
+				<div class="main_banner_wrap">
+					<div class="main_banner_box" id="m_box">
+						<a href="javascript:void(0)" class="banner_btn js_pre">
+							<span class="banner_btn_arrow"><i></i></span>
+						</a>
+						<a href="javascript:void(0)" class="banner_btn btn_next js_next">
+							<span class="banner_btn_arrow"><i></i></span>
+						</a>
+						<ul>
+							<li id="imgCard0">
+								<a href=""><span style="opacity:0;"></span></a>
+								<img src="img/index/banner.jpg" alt="">
+								<p style="bottom:0">财富大魔方精彩实时在线互动中</p>
+							</li>
+							<li id="imgCard1">
+								<a href=""><span style="opacity:0.4;"></span></a>
+								<img src="img/index/banner.png" alt="">
+								<p>财富世界</p>
+							</li>
+							<li id="imgCard2">
+								<a href=""><span style="opacity:0.4;"></span></a>
+								<img src="img/index/weibo.jpg" alt="">
+								<p>乐见大牌：”荣“耀之声，”维“我独尊</p>
+							</li>
+							<li id="imgCard3">
+								<a href=""><span style="opacity:0.4;"></span></a>
+								<img src="img/index/banner.png" alt="">
+								<p>合作栏目</p>
+							</li>
+							<li id="imgCard4">
+								<a href=""><span style="opacity:0.4;"></span></a>
+								<img src="img/index/banner.jpg" alt="">
+								<p>财经大咖大比拼</p>
+							</li>
+						</ul>
+						<!--火狐倒影图层-->
+						<p id="rflt"></p>
+					</div>
+					<!--序列按钮-->
+					<div class="btn_list">
+						<span class="curr"><img src="img/index/videos.png" alt=""></span>
+						<span><img src="img/index/video.png" alt=""></span>
+						<span><img src="img/index/video.png" alt=""></span>
+						<span><img src="img/index/video.png" alt=""></span>
+						<span><img src="img/index/video.png" alt=""></span>
+					</div>
+				</div>
+			</div>
+			<div class="aui-content-max">
+				<div class="inner">
+					<div class="aui-content-box">
+						<div class="prev">
+							<a href="javascript:void(0)">
+								<img src="img/index/prev.png" alt="">
+							</a>
+						</div>
+						<div class="aui-content-box-ovf">
+							<div class="aui-content-box-list">
+								<ul>
+									<li>
+										<a href="javascript:;">
+											<div class="aui-content-item-img">
+												<img src="img/index/video2.png" alt="">
+											</div>
+											<p class="aui-content-item-name"><span>盘面进行时</span><br>9:30-10:00</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<div class="aui-content-item-img">
+												<img src="img/index/videos.png" alt="">
+											</div>
+											<p class="aui-content-item-name"><span>风云龙虎榜</span><br>10:00-10:30</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<div class="aui-content-item-img">
+												<img src="img/index/video2.png" alt="">
+											</div>
+											<p class="aui-content-item-name"><span>诊股直播室</span><br>10:30-11:00</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<div class="aui-content-item-img">
+												<img src="img/index/video2.png" alt="">
+											</div>
+											<p class="aui-content-item-name"><span>主题投资库</span><br>11:00-11:30</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<div class="aui-content-item-img">
+												<img src="img/index/video2.png" alt="">
+											</div>
+											<p class="aui-content-item-name"><span>选股大揭秘</span><br>13:30-14:00</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<div class="aui-content-item-img">
+												<img src="img/index/video2.png" alt="">
+											</div>
+											<p class="aui-content-item-name"><span>免费领券</span><br></p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<div class="aui-content-item-img">
+												<img src="img/index/video2.png" alt="">
+											</div>
+											<p class="aui-content-item-name"><span>博弈大课堂</span><br>14:30-15:00</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<div class="aui-content-item-img">
+												<img src="img/index/video2.png" alt="">
+											</div>
+											<p class="aui-content-item-name"><span>大海复盘</span><br>15:00-15:30</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="next">
+							<a href="javascript:void(0)">
+								<img src="img/index/next.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="secmargin">
+			<div class="inner">
+				<h1 class="types-title" id="teacher_today">
+					<b>本</b>／<b>期</b>／<b>嘉</b>／<b>宾</b>
+				</h1>
+				<div class="teacher">
+					<ul>
+						<li><a href="javascript:;">
+								<div class="teacher_usericon"><img src="img/index/touxiang.png"></div>
+								<div class="teacher_name">
+									<h3>张军老师</h4>
+										<p>股票分析师<br>人气：<span>9082</span></p>
+								</div>
+								<button class="btnzan">赞</button>
+								<button class="btndy">订阅</button>
+							</a></li>
+						<li><a href="javascript:;">
+								<div class="teacher_usericon"><img src="img/index/touxiang.png"></div>
+								<div class="teacher_name">
+									<h3>张军老师</h4>
+										<p>股票分析师<br>人气：<span>129082</span></p>
+								</div>
+								<button class="btnzan">赞</button>
+								<button class="btndy">订阅</button>
+							</a></li>
+						<li><a href="javascript:;">
+								<div class="teacher_usericon"><img src="img/index/touxiang.png"></div>
+								<div class="teacher_name">
+									<h3>宋海兴老师</h4>
+										<p>股票分析师<br>人气：<span>96605</span></p>
+								</div>
+								<button class="btnzan">赞</button>
+								<button class="btndy">订阅</button>
+							</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="secmargin">
+			<div class="inner">
+				<div class="chartlist">
+					<div id="KChart1"></div>
+					<div id="KChart2"></div>
+					<div id="KChart3"></div>
+					<div id="KChart4"></div>
+					<div id="KChart5"></div>
+				</div>
+			</div>
+		</section>
+		<section class="secmargin">
+			<div class="inner">
+				<div id="new_box">
+					<div class="newtel">
+						<ul class="new_telst">
+							<li class="newon">财经舆情</li>
+							<li class="">热门焦点</li>
+							<li class="">独家点评</li>
+							<li class="">深度观点</li>
+						</ul>
+						<a href="javascript:;" class="types-title-more" target="_blank"> <span>查看更多</span>
+						</a>
+						<div class="clear">
+						</div>
+					</div>
+					<div class="new_con">
+						<div class="new-wrap">
+							<!--1-->
+							<div class="new_lst show" style="display: block;">
+								<ul class="new_lst_cn">
+									<li class="new_cnlf">
+										<p class="newlf_img">
+											<img src="img/index/new_img1.jpg">
+										</p>
+										<p class="newlf_tel">
+											<a href="javascript;" target="_blank"> 天下数据2018年端午节放假安排！ </a>
+										</p>
+										<p class="newlf_tx">
+											根据《国务院办公厅关于2018年部分节假日安排的通知》精神,及我司实际情况,现将2018年端午节放假安排通知如下:
+										</p>
+									</li>
+									<li class="new_cnrf">
+										<div class="newrf_lst">
+											<dl>
+												<dd>
+													<p class="new_rq">
+														<span>13</span>2018-6
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据2018年端午节放假安排！ </a>
+														<span> 根据《国务院办公厅关于2018年部分节假日安排的通知》精神,及我司实际情况,</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>15</span>2018-5
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 记朗玥科技惠州两日行 </a>
+														<span>时间总是在你忙碌中向前跑得飞快。恍然间2018年已至5月，当歇息一番，放空自己</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>23</span>2018-4
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据五一劳动节放假安排！ </a>
+														<span> 根据《国务院办公厅关于2018年部分节假日安排的通知》精神,及我司实际情况,</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>3</span>2018-4
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据泰国游记 </a>
+														<span>一提到泰国，或许我们脑海中立刻冒出来词都是相同的，那大概就是人妖了。其实不然，</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>3</span>2018-4
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据2018年清明节放假通知安排 </a>
+														<span>根据国家国务院法定节假日放假规定,结合公司实际情况。根据公司领导安排,现将20</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>1</span>2018-3
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 机智如你｜天下数据邀您备战元宵节，... </a>
+														<span>明天是正月十五元宵节 ，在这个吉祥的日子里，
+															天下数据 提前祝所有客户朋
+														</span>
+													</p>
+												</dd>
+											</dl>
+										</div>
+									</li>
+									<div class="clear">
+									</div>
+								</ul>
+							</div>
+							<!--2-->
+							<div class="new_lst" style="display: none;">
+								<ul class="new_lst_cn">
+									<li class="new_cnlf">
+										<p class="newlf_img">
+											<img src="img/index/new_img2.jpg">
+										</p>
+										<p class="newlf_tel">
+											<a href="javascript;" target="_blank"> 天下数据：CDN加速技术的特点和优势 </a>
+										</p>
+										<p class="newlf_tx">
+											现如今大众对互联网服务的要求越来越高，对于网站访问速度的快慢自然会更加在意。虽然带宽不断增加，但用户数量也在不断增加，受网站服务器的负荷和传输距离等因素的影响，响应速度依然需要得到重视。
+										</p>
+									</li>
+									<li class="new_cnrf">
+										<div class="newrf_lst">
+											<dl>
+												<dd>
+													<p class="new_rq">
+														<span>26</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据：CDN加速技术的特点和优势 </a>
+														<span>现如今大众对互联网服务的要求越来越高，对于网站访问速度的快慢自然会更加在意。虽</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>25</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 美国服务器下载速度受那些因素影响？ </a>
+														<span> 美国服务器带宽比较大，对于软件下载或者在线视频观看时，下载的速度都会比较快，</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>24</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 从腾讯云宕机看如何提高云服务器安全... </a>
+														<span>腾讯云于今日出现宕机现象，称监控到广州区域部分用户资源访问失败，控制台登录异常</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>23</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 美国服务器可以做视频网站吗？有哪些... </a>
+														<span> 美国服务器可以做视频网站吗?由于距离的原因，对于中国市场来说，很多人都不会选</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>19</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 视频网站服务器租用从哪些方面选择？ </a>
+														<span>随着网络宽带上的升级，网站也随着多方面性的发展，在网络中视频网站的数量也在呈直</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>18</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 美国服务器适合建哪些企业网站? </a>
+														<span>天下数据美国KT服务器冲量抄底特价低至350元/月</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>19</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 视频网站服务器租用从哪些方面选择？ </a>
+														<span>随着网络宽带上的升级，网站也随着多方面性的发展，在网络中视频网站的数量也在呈直</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>18</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 美国服务器适合建哪些企业网站? </a>
+														<span>天下数据美国KT服务器冲量抄底特价低至350元/月</span>
+													</p>
+												</dd>
+											</dl>
+										</div>
+									</li>
+									<div class="clear">
+									</div>
+								</ul>
+							</div>
+							<!--3-->
+							<div class="new_lst" style="display: none;">
+								<ul class="new_lst_cn">
+									<li class="new_cnlf">
+										<p class="newlf_img">
+											<img src="img/index/new_img3.jpg">
+										</p>
+										<p class="newlf_tel">
+											<a href="javascript;" target="_blank"> 直销认证 | 天下数据被授予“201... </a>
+										</p>
+										<p class="newlf_tx">
+											2018「第十一届」世界直销品牌节大会以“向新力 新需求/再出发”为主题，在武汉洲际酒店隆重举行。
+										</p>
+									</li>
+									<li class="new_cnrf">
+										<div class="newrf_lst">
+											<dl>
+												<dd>
+													<p class="new_rq">
+														<span>6</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 直销认证 | 天下数据被授予“201...
+														</a>
+														<span> 2018「第十一届」世界直销品牌节大会以“向新力 新需求/再出发”为主题，在</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>6</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据聊：直销企业面临新机遇和新... </a>
+														<span>近年来，随着全球经济增速放缓，居民消费水平的提高，“互联网+”的突飞猛进、微商</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>3</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据荣获“2018年度品牌信息化...
+														</a>
+														<span>恭喜天下数据在第十一届世界直销品牌节荣获“2018年度品牌信息化服务之星”的称</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>28</span>2018-6
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 第十一届世界直销品牌节，天下数据品... </a>
+														<span>第十一届世界直销品牌节在武汉五星级酒店——洲际酒店宴会厅拉开了直销品牌节的节日</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>27</span>2018-6
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据受邀参加“2018世界直销品...
+														</a>
+														<span> 2018年6月27日，天下数据应邀出席第十一届（世界）中国直销品牌节。中国</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>26</span>2018-6
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据：世界杯看直播 不卡顿可以吗...
+														</a>
+														<span>全民直播年代，迎接来了四年一遇的火热世界杯。因为互联网的迅速崛起，以及全民直播</span>
+													</p>
+												</dd>
+											</dl>
+										</div>
+									</li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+							<!--4-->
+							<div class="new_lst" style="display: none;">
+								<ul class="new_lst_cn">
+									<li class="new_cnlf">
+										<p class="newlf_img">
+											<img src="img/index/new_img3.jpg">
+										</p>
+										<p class="newlf_tel">
+											<a href="javascript;" target="_blank"> 直销认证 | 天下数据被授予“201... </a>
+										</p>
+										<p class="newlf_tx">
+											2018「第十一届」世界直销品牌节大会以“向新力 新需求/再出发”为主题，在武汉洲际酒店隆重举行。
+										</p>
+									</li>
+									<li class="new_cnrf">
+										<div class="newrf_lst">
+											<dl>
+												<dd>
+													<p class="new_rq">
+														<span>6</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 直销认证 | 天下数据被授予“201...
+														</a>
+														<span> 2018「第十一届」世界直销品牌节大会以“向新力 新需求/再出发”为主题，在</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>6</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据聊：直销企业面临新机遇和新... </a>
+														<span>近年来，随着全球经济增速放缓，居民消费水平的提高，“互联网+”的突飞猛进、微商</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>3</span>2018-7
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据荣获“2018年度品牌信息化...
+														</a>
+														<span>恭喜天下数据在第十一届世界直销品牌节荣获“2018年度品牌信息化服务之星”的称</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>28</span>2018-6
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 第十一届世界直销品牌节，天下数据品... </a>
+														<span>第十一届世界直销品牌节在武汉五星级酒店——洲际酒店宴会厅拉开了直销品牌节的节日</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>27</span>2018-6
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据受邀参加“2018世界直销品...
+														</a>
+														<span> 2018年6月27日，天下数据应邀出席第十一届（世界）中国直销品牌节。中国</span>
+													</p>
+												</dd>
+												<dd>
+													<p class="new_rq">
+														<span>26</span>2018-6
+													</p>
+													<p class="newrf_tx">
+														<a href="javascript;" target="_blank"> 天下数据：世界杯看直播 不卡顿可以吗...
+														</a>
+														<span>全民直播年代，迎接来了四年一遇的火热世界杯。因为互联网的迅速崛起，以及全民直播</span>
+													</p>
+												</dd>
+											</dl>
+										</div>
+									</li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sbanner" style="box-shadow:none">
+			<div class="inner">
+				<div class="sb1">
+					<img src="img/index/sbanner4.png">
+				</div>
+			</div>
+		</section>
+		<section class="teacherlist">
+			<div class="inner">
+				<table></table>
+				<h3 class="types-title">
+					<b>财</b>／<b>富</b>／<b>大</b>／<b>咖</b>／<b>诊</b>／<b>股</b>
+					<a href="javascript:;" class="types-title-more" target="_blank"> <span>查看更多</span>
+					</a>
+				</h3>
+				<div class="scrolllist" id="slider">
+					<a class="abtn aleft" href="#left" title="左移"></a>
+					<div class="imglist_w">
+						<ul class="imglist">
+							<li>
+								<a href="javascript:;">
+									<img alt="汤嘉骏" src="img/index/1tpic.jpg" />
+								</a>
+								<a href="javascript:;">
+									<h2>汤嘉骏</h2>
+									<h6>证券通&nbsp;股票分析师&nbsp;|&nbsp;稳健型-股票-投资顾问</h6>
+									<p class="tview">
+										<b>今日观点：</b><span>市场的大数据分析，对把握市场热点和筛选个股市场的大数据分析，对把握市场热点股票动态大盘大跌还有机会大盘大跌还有机会大盘大股票动态大盘大跌还有机会,次新银行股逆市表现资金...</span>
+									</p>
+									<p class="tintro">
+										上海证券通投资顾问，入行数年，擅长从市场博弈的角度结合技术面来分析走势。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。
+									</p>
+								</a>
+								<a href="javascript:;" id="task">立即提问</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img alt="汤嘉骏" src="img/index/3tpic.jpg" />
+								</a>
+								<a href="javascript:;">
+									<h2>汤嘉骏</h2>
+									<h6>证券通&nbsp;股票分析师&nbsp;|&nbsp;稳健型-股票-投资顾问</h6>
+									<p class="tview">
+										<b>今日观点：</b><span>市场的大数据分析，对把握市场热点和筛选个股市场的大数据分析，对把握市场热点股票动态大盘大跌还有机会大盘大跌还有机会大盘大股票动态大盘大跌还有机会,大盘大跌还有机会,大盘大跌还有机会,次新银行股逆市表现资金...</span>
+									</p>
+									<p class="tintro">
+										上海证券通投资顾问，入行数年，擅长从市场博弈的角度结合技术面来分析走势。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。</p>
+								</a>
+								<a href="javascript:;" id="task">立即提问</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img alt="汤嘉骏" src="img/index/1tpic.jpg" />
+								</a>
+								<a href="javascript:;">
+									<h2>汤嘉骏</h2>
+									<h6>证券通&nbsp;股票分析师&nbsp;|&nbsp;稳健型-股票-投资顾问</h6>
+									<p class="tview">
+										<b>今日观点：</b><span>市场的大数据分析，对把握市场热点和筛选个股市场的大数据分析，对把握市场热点股票动态大盘大跌还有机会大盘大跌还有机会大盘大股票动态大盘大跌还有机会,次新银行股逆市表现资金...</span>
+									</p>
+									<p class="tintro">
+										上海证券通投资顾问，入行数年，擅长从市场博弈的角度结合技术面来分析走势。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。
+									</p>
+								</a>
+								<a href="javascript:;" id="task">立即提问</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img alt="汤嘉骏" src="img/index/4tpic.jpg" />
+								</a>
+								<a href="javascript:;">
+									<h2>汤嘉骏</h2>
+									<h6>证券通&nbsp;股票分析师&nbsp;|&nbsp;稳健型-股票-投资顾问</h6>
+									<p class="tview">
+										<b>今日观点：</b><span>市场的大数据分析，对把握市场热点和筛选个股市场的大数据分析，对把握市场热点股票动态大盘大跌还有机会大盘大跌还有机会大盘大股票动态大盘大跌还有机会,次新银行股逆市表现资金...</span>
+									</p>
+									<p class="tintro">
+										上海证券通投资顾问，入行数年，擅长从市场博弈的角度结合技术面来分析走势。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。
+									</p>
+								</a>
+								<a href="javascript:;" id="task">立即提问</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img alt="汤嘉骏" src="img/index/1tpic.jpg" />
+								</a>
+								<a href="javascript:;">
+									<h2>汤嘉骏</h2>
+									<h6>证券通&nbsp;股票分析师&nbsp;|&nbsp;稳健型-股票-投资顾问</h6>
+									<p class="tview">
+										<b>今日观点：</b><span>市场的大数据分析，对把握市场热点和筛选个股市场的大数据分析，对把握市场热点股票动态大盘大跌还有机会大盘大跌还有机会大盘大股票动态大盘大跌还有机会,次新银行股逆市表现资金...</span>
+									</p>
+									<p class="tintro">
+										上海证券通投资顾问，入行数年，擅长从市场博弈的角度结合技术面来分析走势。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。
+									</p>
+								</a>
+								<a href="javascript:;" id="task">立即提问</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img alt="汤嘉骏" src="img/index/1tpic.jpg" />
+								</a>
+								<a href="javascript:;">
+									<h2>汤嘉骏</h2>
+									<h6>证券通&nbsp;股票分析师&nbsp;|&nbsp;稳健型-股票-投资顾问</h6>
+									<p class="tview">
+										<b>今日观点：</b><span>市场的大数据分析，对把握市场热点和筛选个股市场的大数据分析，对把握市场热点股票动态大盘大跌还有机会大盘大跌还有机会大盘大股票动态大盘大跌还有机会,次新银行股逆市表现资金...</span>
+									</p>
+									<p class="tintro">
+										上海证券通投资顾问，入行数年，擅长从市场博弈的角度结合技术面来分析走势。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。
+									</p>
+								</a>
+								<a href="javascript:;" id="task">立即提问</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img alt="汤嘉骏" src="img/index/2tpic.jpg" />
+								</a>
+								<a href="javascript:;">
+									<h2>汤嘉骏</h2>
+									<h6>证券通&nbsp;股票分析师&nbsp;|&nbsp;稳健型-股票-投资顾问</h6>
+									<p class="tview">
+										<b>今日观点：</b><span>市场的大数据分析，对把握市场热点和筛选个股市场的大数据分析，对把握市场热点股票动态大盘大跌还有机会大盘大跌还有机会大盘大股票动态大盘大跌还有机会,次新银行股逆市表现资金...</span>
+									</p>
+									<p class="tintro">
+										上海证券通投资顾问，入行数年，擅长从市场博弈的角度结合技术面来分析走势。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。炒股就是差价的艺术，轻松投资，快乐人生。
+									</p>
+								</a>
+								<a href="javascript:;" id="task">立即提问</a>
+							</li>
+						</ul>
+					</div>
+					<a class="abtn aright" href="#right" title="右移"></a>
+					<!--
+				<div class="slider-page">
+					<span class="spb spb-active"></span>
+					<span class="spb"></span>
+					<span class="spb"></span>
+				</div>
+				-->
+				</div>
+			</div>
+		</section>
+		<section class="sbanner">
+			<div class="inner">
+				<div class="sb2">
+					<img src="img/index/sbanner2.png">
+				</div>
+			</div>
+		</section>
+		<section class="seclive">
+			<div class="inner">
+				<div class="liveclass">
+					<table></table>
+					<div id="new_box">
+						<div class="newtel">
+							<ul class="new_telst" style="width:600px;margin-left:-300px;">
+								<li class="newon">实时讲堂</li>
+								<li class="">投教</li>
+								<li class="">节目</li>
+								<li class="">网络</li>
+								<li class="">名师</li>
+							</ul>
+							<div class="types_line">
+								<span>／</span>
+								<span>／</span>
+								<span>／</span>
+								<span>／</span>
+							</div>
+							<a href="javascript:;" class="types-title-more" target="_blank"> <span>查看更多</span>
+							</a>
+							<div class="clear">
+							</div>
+						</div>
+						<div class="new_con" style="padding: 0;">
+							<div class="new-wrap">
+								<!--1-->
+								<div class="new_lst show" style="display: block;">
+									<ul class="live_list">
+										<li class="list_item">
+											<a href="https:.html?videoMark=" target="" class="figure">
+												<img class="figure_pic" alt="" src="img/index/ycsp.png"
+													style="visibility: visible;">
+												<div class="figure_caption">
+													2019-04-20 期
+												</div>
+												<div class="mark_v">新手课堂</div>
+											</a>
+											<div class="ticon"><img src="img/index/touxiang.png"></div>
+											<div class="figure_detail">
+												<a href="https:.html?videoMark=" class="figure_title tname" title=""
+													target=" ">张军2019</a>
+												<div class="figure_desc" title="次新银行股逆市表现资金为何选择反复狙击？">
+													次新银行股逆市表现资金为何选择反复狙击？</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!--2-->
+								<div class="new_lst" style="display: none;">
+									<ul class="new_lst_cn">
+										<li>2222</li>
+									</ul>
+								</div>
+								<!--3-->
+								<div class="new_lst" style="display: none;">
+									<ul class="new_lst_cn">
+										<li>3333</li>
+									</ul>
+								</div>
+								<!--4-->
+								<div class="new_lst" style="display: none;">
+									<ul class="new_lst_cn">
+										<li>4444</li>
+									</ul>
+								</div>
+								<!--5-->
+								<div class="new_lst" style="display: none;">
+									<ul class="new_lst_cn">
+										<li>5555</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sbanner">
+			<div class="inner">
+				<div class="sb3">
+					<img src="img/index/sbanner3.png">
+				</div>
+			</div>
+		</section>
+		<section class="seclive">
+			<div class="inner">
+				<div class="liveclass">
+					<table></table>
+					<div id="new_box">
+						<div class="newtel">
+							<ul class="new_telst" style="width:600px;margin-left:-300px;">
+								<li class="newon">原创视频</li>
+								<li class="">股票动态</li>
+								<li class="">名师看市</li>
+								<li class="">经济实评</li>
+								<li class="">课堂回顾</li>
+							</ul>
+							<div class="types_line">
+								<span>／</span>
+								<span>／</span>
+								<span>／</span>
+								<span>／</span>
+							</div>
+							<a href="javascript:;" class="types-title-more" target="_blank"> <span>查看更多</span>
+							</a>
+							<div class="clear">
+							</div>
+						</div>
+						<div class="new_con" style="padding: 0;">
+							<div class="new-wrap">
+								<!--1-->
+								<div class="new_lst show" style="display: block;">
+									<ul class="live_list">
+										<li class="list_item">
+											<a href="https:.html?videoMark=" target="" class="figure">
+												<img class="figure_pic" alt="" src="img/index/videos.png"
+													style="visibility: visible;">
+												<div class="figure_caption">
+													2019-04-20 期
+												</div>
+												<div class="mark_v">财富天下</div>
+											</a>
+											<div class="figure_detail">
+												<a href="https:.html?videoMark=" class="figure_title" title=""
+													target=" ">创造营2019</a>
+												<div class="figure_desc" title="赵政豪高音秀舞技全场惊艳">赵政豪高音秀舞技全场惊艳 </div>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+								<!--2-->
+								<div class="new_lst" style="display: none;">
+									<ul class="new_lst_cn">
+										<li>2222</li>
+									</ul>
+								</div>
+								<!--3-->
+								<div class="new_lst" style="display: none;">
+									<ul class="new_lst_cn">
+										<li>3333</li>
+									</ul>
+								</div>
+								<!--4-->
+								<div class="new_lst" style="display: none;">
+									<ul class="new_lst_cn">
+										<li>4444</li>
+									</ul>
+								</div>
+								<!--5-->
+								<div class="new_lst" style="display: none;">
+									<ul class="new_lst_cn">
+										<li>5555</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sbanner">
+			<div class="inner">
+				<div class="sb4">
+					<img src="img/index/sbanner1.png">
+				</div>
+			</div>
+		</section>
+		<section style="background:#11418E;padding: 10px 0 40px;">
+			<div class="inner">
+				<h3 class="types-title">
+					<b>财</b>／<b>富</b>／<b>大</b>／<b>魔</b>／<b>方</b>
+					<a href="javascript:;" class="types-title-more" target="_blank"> <span>查看更多</span>
+					</a>
+				</h3>
+				<div class="uldiv">
+					<div class="btndiv">
+						<a class="abtn btns aleft" href="#left">左移</a>
+						<a class="abtn btns aright agrayright" href="#right">右移</a>
+					</div>
+					<div class="scrollcontainer">
+						<ul>
+							<li>
+								<ul class="live_list">
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/index/video2.png"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">财富大魔方</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6财富大魔方中午12点39</a>
+											<div class="figure_desc" title="财富大魔方">财富大魔方</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>222<img src="img/index/img02.gif"></li>
+							<li>333<img src="img/index/img01.gif"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sbanner">
+			<div class="inner">
+				<div class="sb5">
+					<img src="img/index/sbanner5.png">
+				</div>
+			</div>
+		</section>
+		<a class="newcomer" href="javascript:;" target="_blank">
+			<i class="js-close imv2-close"></i>
+		</a>
+		<div id="floatright" style="position: absolute; z-index: 10; ">
+			<div id="rightArrow"><a href="javascript:;" title="免费诊股名额限时开抢"></a></div>
+			<img class="timer_boxbg" src="img/lowpoly.jpg" alt="">
+			<div class="timer_box">
+				<div class="thumb"></div>
+				<div class="timer_grid">
+					<ul id="countdown" class="countdownHolder">
+					</ul>
+					<ul class="navigation">
+						<!--
+					<li>
+						<p class="timeRefDays">天</p>
+					</li>
+					-->
+						<li>
+							<p class="timeRefHours">小时</p>
+						</li>
+						<li>
+							<p class="timeRefMinutes">分钟</p>
+						</li>
+						<li>
+							<p class="timeRefSeconds">秒</p>
+						</li>
+					</ul>
+				</div>
+				<div class="thumb_desc">
+					<p> • 每天一个值班老师，每天四个时段上午9点-10点,10点-11点，下午2点-3点,3点-4点，进行免费诊股，每个时段免费名额为五人，抢到名额即可对值班老师进行提问一个问题<br>
+						• 显示为抢名额倒计时，时间归0时点击“抢名额”按钮进行抢票，前十名可获得名额</p>
+					<h3>剩余名额</h3>
+					<div class="price">
+						<span class="actual">7</span>
+					</div>
+				</div>
+				<a href="javascript:;">
+					<div class="link3">立即抢名额</div>
+				</a>
+			</div>
+		</div>
+
+		<footer>
+			<div class="inner"><iframe class="my_footer" src="footer.html"></iframe></div>
+		</footer>
+
+		<script src="js/slider.js"></script>
+		<script src="js/banner.js"></script>
+		<script>
+			//浮动活动
+			window.onload = function () {
+				var ad = new FloatAd({
+					//nodeLink : "<a href='#'><img src='img/floatadd.png' border=0 /></a>" ,
+					floatObj: "floatright",
+					x: 10,
+					y: 250,
+					locate: "right"
+				});
+				ad.play();
+			}
+			var FloatAd = function (obj) {
+				var mainNode = $("." + obj.main)[0];
+				if (obj.nodeLink && (typeof obj.nodeLink == "string")) {
+					var newFloatObj = document.createElement("div");
+					newFloatObj.id = obj.floatObj;
+					newFloatObj.style.position = "absolute";
+					newFloatObj.style.zIndex = 10;
+					newFloatObj.innerHTML = obj.nodeLink;
+					document.body.appendChild(newFloatObj);
+				}
+				this.ad = document.getElementById(obj.floatObj);
+				this.main = document.getElementById(obj.main) || mainNode;
+				this.x = obj.x;
+				this.y = obj.y;
+				this.locate = obj.locate;
+				this.space = obj.space;
+				var that = this;
+				this.play = function () {
+					setInterval(function () {
+						that.calculate();
+					}, 10);
+				};
+			}
+			FloatAd.prototype = {
+				constructor: FloatAd,
+				calculate: function () {
+					var obj_x = this.x,
+						obj_y = this.y,
+						main_offsetLeft = document.documentElement.scrollLeft || document.body.scrollLeft,
+						main_offsetTop = document.documentElement.scrollTop || document.body.scrollTop;
+					if (this.main) {
+						if (this.locate == "left") {
+							obj_x = this.main.offsetLeft - this.ad.offsetWidth - this.space;
+						} else if (this.locate == "right") {
+							obj_x = this.main.offsetLeft + this.main.offsetWidth + this.space;
+						}
+						if (this.ad.offsetLeft != main_offsetLeft + obj_x) {
+							var dx = (main_offsetLeft + obj_x - this.ad.offsetLeft) * 0.08;
+							dx = (dx > 0 ? 1 : -1) * Math.ceil(Math.abs(dx));
+							this.ad.style.left = this.ad.offsetLeft + dx + "px";
+						}
+					} else {
+						if (this.locate == "left") {
+							this.ad.style.left = obj_x + "px";
+						} else if (this.locate == "right") {
+							this.ad.style.right = obj_x + "px";
+						}
+					}
+					if (this.ad.offsetTop != main_offsetTop + obj_y) {
+						var dy = (main_offsetTop + obj_y - this.ad.offsetTop) * 0.08;
+						dy = (dy > 0 ? 1 : -1) * Math.ceil(Math.abs(dy));
+						this.ad.style.top = this.ad.offsetTop + dy + "px";
+					}
+				}
+			}
+		</script>
+		<script>
+			$(function () {
+				var flag = 0;
+				$('#rightArrow').on("click", function () {
+					if (flag == 1) {
+						$(".timer_boxbg").animate({
+							right: '-260px'
+						}, 300);
+						$(".timer_box").animate({
+							right: '-260px'
+						}, 300);
+						$(this).css('background-position', '-50px 0');
+						flag = 0;
+					} else {
+						$(".timer_box").animate({
+							right: '0'
+						}, 300);
+						$(".timer_boxbg").animate({
+							right: '0'
+						}, 300);
+						$(this).css('background-position', '0px 0');
+						flag = 1;
+					}
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(function () {
+				$(".uldiv").Xslider({
+					unitdisplayed: 1,
+					numtoMove: 1,
+					scrollobj: ".scrollcontainer>ul",
+					speed: 500,
+					scrollobjSize: Math.ceil($(".uldiv").find(".scrollcontainer>ul>li").length / 1) * 1190
+				})
+			})
+		</script>
+		<script>
+			//tab悬停切换
+			$(document).ready(function () {
+				$('.new_telst li').mouseover(function () {
+					var liindex = $('.new_telst li').index(this);
+					$(this).addClass('newon').siblings().removeClass('newon');
+					$('.new-wrap div.new_lst').eq(liindex).fadeIn(800).siblings('div.new_lst').hide();
+					var liWidth = $('.new_telst li').width();
+				});
+				$('.imglist li').mouseover()
+			});
+		</script>
+		<script>
+			//opacity轮播
+			$(function () {
+				var index = 0;
+				var lis = $('.slider li');
+				$('.arrow-right').click(right);
+
+				function right() {
+					index++;
+					if (index == lis.length) {
+						index = 0;
+					}
+					lis.eq(index).fadeIn().siblings().fadeOut();
+					$('.focus i').eq(index).addClass('current').siblings().removeClass('current');
+				}
+				$('.arrow-left').click(function () {
+					index--;
+					if (index < 0) {
+						index = lis.length - 1;
+					}
+					lis.eq(index).fadeIn().siblings().fadeOut();
+					$('.focus i').eq(index).addClass('current').siblings().removeClass('current');
+				})
+				btns = $('.focus i');
+				for (var i = 0; i < btns.length; i++) {
+					btns.eq(i).attr('index', i);
+					btns.eq(i).mouseenter(fn);
+				}
+
+				function fn() {
+					var index = $(this).attr('index');
+					lis.eq(index).fadeIn().siblings().fadeOut();
+					$(this).addClass('current').siblings().removeClass('current');
+				}
+				var timeid = setInterval(function () {
+					right()
+				}, 3000)
+				$('.slider').mouseleave(function () {
+					timeid = setInterval(function () {
+						right()
+					}, 3000)
+				})
+				$('.slider').mouseenter(function () {
+					clearInterval(timeid)
+				})
+			})
+		</script>
+		<script>
+			//大图轮播
+			var len = $(".main_banner li").length;
+			var index_2 = 0;
+			var timer = 800;
+			var intervaltimer = 0;
+			var isMoving = false;
+
+			function slide(slideMode) { //轮播方法		
+				if (isMoving == false) {
+					isMoving = true;
+					var prev;
+					var next;
+					var hidden;
+					var curr = $("#imgCard" + index_2); //当前正中显示
+
+					if (index_2 == 0) { //当前正中显示的是第0张时 prev为最后一张
+						prev = $("#imgCard" + (len - 1));
+					} else { //否则  序列号-1
+						prev = $("#imgCard" + (index_2 - 1));
+					}
+					if (index_2 == (len - 1)) { //当前正中显示的是最后一张时 next为第0张
+						next = $("#imgCard0");
+					} else { //否则  序列号+1
+						next = $("#imgCard" + (index_2 + 1));
+					}
+
+					if (slideMode) { //slideMode为1(true)，执行slide(1)，上一张
+						if (index_2 - 2 >= 0) { //index_2						2		3		4
+							hidden = $("#imgCard" + (index_2 - 2)); //									0		1		2
+						} else { //index_2		0		1
+							hidden = $("#imgCard" + (len + index_2 - 2)); //			3		4
+						}
+						prev.css("z-index", "5"); //点击prev按钮  让prev位置上的这张图片 层级最高 显示
+						next.css("z-index", "1");
+						curr.css("z-index", "2");
+						hidden.css("z-index", "1");
+						//当index_2自减，各图片往右运动效果
+						hidden.css({
+							width: "800px",
+							height: "320px",
+							top: "60px",
+							"left": "0px",
+							"opacity": 0
+						});
+						hidden.stop(true, true).animate({
+							width: "1030px",
+							height: "425px",
+							top: "20px",
+							left: "0px",
+							opacity: 1
+						}, timer);
+						curr.stop(true, true).animate({
+							width: "1030px",
+							height: "425px",
+							top: "20px",
+							left: "670px",
+							opacity: 1
+						}, timer);
+						next.stop(true, true).animate({
+							width: "800px",
+							height: "320px",
+							top: "60px",
+							"left": "730px",
+							"opacity": 0
+						}, timer, function () {
+							next.find("span").css("opacity", 0);
+							isMoving = false;
+						});
+						//prev  -->  curr     prev中的图片li轮换到curr的位置      其他一次轮换
+						prev.find("span").css("opacity", 0);
+						$(".main_banner_box li").find("p").css({
+							"bottom": "-50px"
+						}); //所有标题隐藏
+						prev.stop(true, true).animate({
+							width: "1190px",
+							height: "500px",
+							left: "255px",
+							top: 0,
+							opacity: 1
+						}, timer, function () {
+							$(this).find("p").animate({
+								"bottom": "0px"
+							}); //当前这张图片的标题运动出来
+						});
+						index_2--;
+					} else { //执行next 操作
+						if (index_2 + 2 >= len) { //index_2								3		4	
+							hidden = $("#imgCard" + (index_2 + 2 - len)); //										0		1
+						} else { //index_2		0		1		2
+							hidden = $("#imgCard" + (index_2 + 2)); //						2		3		4
+						}
+						prev.css("z-index", "1");
+						next.css("z-index", "5"); //点击next按钮  让next位置上的这张图片 层级最高 显示
+						curr.css("z-index", "2");
+						hidden.css("z-index", "1");
+						//当index_2自增，各图片往左运动效果
+						hidden.css({
+							width: "800px",
+							height: "320px",
+							top: "60px",
+							"left": "730px",
+							"opacity": 0
+						});
+						hidden.stop(true, true).animate({
+							width: "1030px",
+							height: "425px",
+							top: "20px",
+							left: "670px",
+							opacity: 1
+						}, timer);
+						curr.stop(true, true).animate({
+							width: "1030px",
+							height: "425px",
+							top: "20px",
+							left: "0px",
+							opacity: 1
+						}, timer);
+						//next  -->  curr     next中的图片li轮换到curr的位置      其他一次轮换
+						next.find("span").css("opacity", 0);
+						$(".main_banner_box li").find("p").css({
+							"bottom": "-50px"
+						}); //所有标题隐藏
+						next.stop(true, true).animate({
+							width: "1190px",
+							height: "500px",
+							left: "255px",
+							top: 0,
+							opacity: 1
+						}, timer, function () {
+							$(this).find("p").animate({
+								"bottom": "0px"
+							}); //当前这张图片的标题运动出来
+						});
+						prev.stop(true, true).animate({
+							width: "800px",
+							height: "320px",
+							left: "0px",
+							top: "60px",
+							opacity: 0
+						}, timer, function () {
+							isMoving = false;
+						});
+						index_2++;
+					} //if else
+
+					hidden.find("span").css("opacity", 0.5);
+					curr.find("span").css("opacity", 0.5);
+
+					if (index_2 == len) index_2 = 0;
+					if (index_2 < 0) index_2 = len + index_2; //限制index_2的范围
+					$(".btn_list span").removeClass('curr').eq(index_2).addClass('curr'); //给序列号按钮添加、移除样式
+				}
+			} //slide()
+
+			if (len > 3) { //序列号按钮 跳序切换 方法
+				$(".btn_list span").click(function (event) {
+
+					if (isMoving) return;
+					var oIndex = $(this).index();
+
+					if (oIndex == index_2) return; //点击按钮的序列号与当前图片的序列号一致，return
+					clearInterval(intervaltimer)
+					intervaltimer = null;
+
+					var flag = false;
+					//当前显示图片的序列号  和  被点击按钮的序列号  间隔超过1且不是首尾两个的时候
+					if (Math.abs(index_2 - oIndex) > 1 && Math.abs(len - Math.abs(index_2 - oIndex)) != 1) {
+						//统一样式
+						$(".main_banner_box li").css({
+							width: "300px",
+							height: "120px",
+							left: "670px",
+							top: "60px",
+							opacity: 0
+						});
+						//如果当前的序列号   比    被点击按钮序列号     大     而且     不相邻、不是首尾  
+						if (index_2 > oIndex && len - Math.abs(index_2 - oIndex) != 1) {
+							flag = true;
+							index_2 = oIndex + 1; //oIndex+1    通过slide()  运动回上一张    oIndex
+						} else { //比   小     而且     不相邻、不是首尾
+							index_2 = oIndex - 1; //oIndex-1     通过slide()  运动到下一张    oIndex
+							if (index_2 < 0) index_2 = len - 1;
+						}
+					} else { //当前 比 被点击  大	且   相邻									//从0    跳到     4		要执行上一张方法
+						if ((index_2 > oIndex && len - (index_2 - oIndex) != 1) || (index_2 < oIndex && len + (index_2 -
+								oIndex) == 1)) {
+							flag = true; //执行上一张
+						}
+					}
+					slide(flag);
+					intervaltimer = setInterval(slide, 5000); //自动轮播
+
+				});
+
+				$(".main_banner_box li").on("mousemove", function () {
+					if ($(this).css("width") == "1190px") { //鼠标移入为当前正中显示的图片li，则清除定时器
+						clearInterval(intervaltimer);
+						intervaltimer = null;
+					}
+				}).on("mouseout", function () { //鼠标移除重新滚动
+					clearInterval(intervaltimer);
+					intervaltimer = null;
+					intervaltimer = setInterval(slide, 5000);
+				});
+
+				$(".js_pre").click(function (event) { //上一张
+					if (isMoving) return;
+					clearInterval(intervaltimer);
+					intervaltimer = null;
+					slide(1);
+					intervaltimer = setInterval(slide, 5000);
+				});
+
+				$(".js_next").click(function (event) { //下一张
+					if (isMoving) return;
+					clearInterval(intervaltimer);
+					intervaltimer = null;
+					slide();
+					intervaltimer = setInterval(slide, 5000);
+				});
+				intervaltimer = setInterval(slide, 5000);
+			} else {
+				$(".js_pre").hide();
+				$(".js_next").hide();
+			} //if else
+		</script>
+		<script>
+			//节目列表滚动
+			$(function () {
+				$(".next a").click(function () {
+					nextscroll()
+				});
+
+				function nextscroll() {
+					var vcon = $(".aui-content-box-list ");
+					var offset = ($(".aui-content-box-list li").width()) * -1;
+					vcon.stop().animate({
+						left: offset
+					}, "slow", function () {
+						var firstItem = $(".aui-content-box-list ul li").first();
+						vcon.find("ul").append(firstItem);
+						$(this).css("left", "0px");
+						circle()
+					});
+				};
+
+				function circle() {
+					var currentItem = $(".aui-content-box-list ul li").first();
+					var currentIndex = currentItem.attr("index");
+					$(".circle li").removeClass("circle-cur");
+					$(".circle li").eq(currentIndex).addClass("circle-cur");
+				}
+				$(".prev a").click(function () {
+					var vcon = $(".aui-content-box-list ");
+					var offset = ($(".aui-content-box-list li").width() * -1);
+					var lastItem = $(".aui-content-box-list ul li").last();
+					vcon.find("ul").prepend(lastItem);
+					vcon.css("left", offset);
+					vcon.animate({
+						left: "0px"
+					}, "slow", function () {
+						circle()
+					})
+				});
+			});
+		</script>
+		<script>
+			//财富大魔方节目左右滚动
+			$(function () {
+				$("#slider").Xslider({
+					unitdisplayed: 5,
+					numtoMove: 1, //movelength:1,
+					unitlen: 218,
+					autoscroll: 3000
+				});
+			})
+		</script>
+		<script>
+			//浮动导航
+			window.onscroll = function () {
+				var topScroll = $(this).scrollTop(); //滚动的距离,距离顶部的距离
+				var bignav = document.getElementById("bignav");
+				if (topScroll > 697) {
+					bignav.style.position = 'fixed';
+					bignav.style.top = '0';
+					bignav.style.boxShadow = '0 24px 47px rgba(25,24,40,.35)';
+					bignav.style.zIndex = '9999';
+				} else {
+					bignav.style.position = 'static';
+					bignav.style.boxShadow = '';
+				}
+			}
+		</script>
+		<script src="js/countdown.js">
+			//倒计时
+		</script>
+		<script>
+			//倒计时
+			$(function () {
+				var ts = new Date(2019, 06, 08);
+				var newYear = true;
+				if ((new Date()) > ts) {
+					ts = (new Date()).getTime();
+					newYear = false;
+				}
+				ts.setMonth(ts.getMonth() - 1); //月份0~11
+
+				$('#countdown').countdown({
+					timestamp: ts,
+					callback: function (days, hours, minutes, seconds) {
+						var message = "";
+						message += days + "day" + (days == 1 ? '' : 's') + ",";
+						message += hours + "hour" + (hours == 1 ? '' : 's') + ",";
+						message += minutes + "minute" + (minutes == 1 ? '' : 's') + "and";
+						message += seconds + "second" + (seconds == 1 ? '' : 's') + "<br/>";
+
+						if (newYear) {
+							message += "left until the new year!";
+						} else {
+							message += "left to 10 days from now!";
+						}
+					}
+				});
+			});
+		</script>
+
+		<script>
+			//实时K线
+			var kline1 = document.getElementById("KChart1");
+			var kline2 = document.getElementById("KChart2");
+			var kline3 = document.getElementById("KChart3");
+			var kline4 = document.getElementById("KChart4");
+			var kline5 = document.getElementById("KChart5");
+			var myChart1 = echarts.init(kline1);
+			var myChart2 = echarts.init(kline2);
+			var myChart3 = echarts.init(kline3);
+			var myChart4 = echarts.init(kline4);
+			var myChart5 = echarts.init(kline5);
+
+			var app = {};
+			option = null;
+
+			function randomData() {
+				now = new Date(+now + oneDay);
+				value = value + Math.random() * 21 - 10;
+				return {
+					name: now.toString(),
+					value: [
+						[now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'),
+						Math.round(value)
+					]
+				}
+			}
+
+			var data = [];
+			var now = +new Date(2011, 5, 3);
+			var oneDay = 24 * 3600 * 1000;
+			var value = Math.random() * 1600;
+			for (var i = 0; i < 1000; i++) {
+				data.push(randomData());
+			}
+
+			option = {
+				title: {
+					left: 'center',
+					top: '10px'
+				},
+				grid: {
+					x: 45,
+					y: 45,
+					x2: 20,
+					y2: 40,
+					borderWidth: 1
+				},
+				tooltip: {
+					trigger: 'axis',
+					formatter: function (params) {
+						params = params[0];
+						var date = new Date(params.name);
+						return date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' : ' + params
+							.value[1];
+					},
+					axisPointer: {
+						animation: false
+					}
+				},
+				xAxis: {
+					type: 'time',
+					splitLine: {
+						show: false
+					}
+				},
+				yAxis: {
+					type: 'value',
+					boundaryGap: [0, '100%'],
+					splitLine: {
+						show: false
+					}
+				},
+				series: [{
+					name: '模拟数据',
+					type: 'line',
+					color: new echarts.graphic.LinearGradient(
+						0, 1, 0, 0,
+						[{
+								offset: 0,
+								color: 'rgb(233, 214, 214)'
+							},
+							{
+								offset: 0.5,
+								color: 'rgb(247, 117, 30)'
+							},
+							{
+								offset: 1,
+								color: 'rgb(248, 0, 54)'
+							}
+						]
+					),
+					showSymbol: false,
+					hoverAnimation: false,
+					data: data
+				}]
+			};
+			setInterval(function () {
+				for (var i = 0; i < 5; i++) {
+					data.shift();
+					data.push(randomData());
+				}
+				myChart1.setOption(option)
+				myChart1.setOption({
+					title: {
+						text: "上证指数"
+					},
+					series: [{
+						data: data
+					}]
+				});
+				myChart2.setOption(option)
+				myChart2.setOption({
+					title: {
+						text: "深证成指"
+					},
+					series: [{
+						data: data
+					}]
+				});
+				myChart3.setOption(option)
+				myChart3.setOption({
+					title: {
+						text: "创业板指数"
+					},
+					series: [{
+						data: data
+					}]
+				});
+				myChart4.setOption(option)
+				myChart4.setOption({
+					title: {
+						text: "沪深300"
+					},
+					series: [{
+						data: data
+					}]
+				});
+				myChart5.setOption(option)
+				myChart5.setOption({
+					title: {
+						text: "恒生指数"
+					},
+					series: [{
+						data: data
+					}]
+				});
+			}, 1000);
+		</script>
+	</body>
+
+</html>
