@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CFDMF-login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/liveroom.css">
+	<link rel="stylesheet" href="css/chatroom.css">
+	<style>
+		h3 span {
+			color: #666;
+		}
+
+		.figure_title {
+			color: #333 !important;
+		}
+	</style>
+
+	<script src="js/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+	<header><iframe class="my_header" src="header.html"></iframe></header>
+	<section>
+		<div class="inner">
+			<div class="wrapper">
+				<div class="container">
+					<div class="left">
+						<div class="top">
+							<input type="text" placeholder="Search" />
+							<a href="javascript:;" class="search"></a>
+						</div>
+						<ul class="people">
+							<li class="person" data-chat="person1">
+								<img src="img/thomas.jpg" alt="" />
+								<span class="name">Thomas Bangalter</span>
+								<span class="time">2:09 PM</span>
+								<span class="preview">I was wondering...</span>
+							</li>
+							<li class="person" data-chat="person2">
+								<img src="img/dog.png" alt="" />
+								<span class="name">Dog Woofson</span>
+								<span class="time">1:44 PM</span>
+								<span class="preview">I've forgotten how it felt before</span>
+							</li>
+							<li class="person" data-chat="person3">
+								<img src="img/louis-ck.jpeg" alt="" />
+								<span class="name">Louis CK</span>
+								<span class="time">2:09 PM</span>
+								<span class="preview">But we’re probably gonna need a new carpet.</span>
+							</li>
+							<li class="person" data-chat="person4">
+								<img src="img/bo-jackson.jpg" alt="" />
+								<span class="name">Bo Jackson</span>
+								<span class="time">2:09 PM</span>
+								<span class="preview">It’s not that bad...</span>
+							</li>
+							<li class="person" data-chat="person5">
+								<img src="img/michael-jordan.jpg" alt="" />
+								<span class="name">Michael Jordan</span>
+								<span class="time">2:09 PM</span>
+								<span class="preview">Wasup for the third time like is
+									you blind bitch</span>
+							</li>
+							<li class="person" data-chat="person6">
+								<img src="img/drake.jpg" alt="" />
+								<span class="name">Drake</span>
+								<span class="time">2:09 PM</span>
+								<span class="preview">howdoyoudoaspace</span>
+							</li>
+						</ul>
+					</div>
+					<div class="right">
+						<div class="top"><span>To: <span class="name">Dog Woofson</span></span></div>
+						<div class="chat" data-chat="person1">
+							<div class="conversation-start">
+								<span>Today, 6:48 AM</span>
+							</div>
+							<div class="bubble you">
+								Hello,
+							</div>
+							<div class="bubble you">
+								it's me.
+							</div>
+							<div class="bubble you">
+								I was wondering...
+							</div>
+						</div>
+						<div class="chat" data-chat="person2">
+							<div class="conversation-start">
+								<span>Today, 5:38 PM</span>
+							</div>
+							<div class="bubble you">
+								Hello, can you hear me?
+							</div>
+							<div class="bubble you">
+								I'm in California dreaming
+							</div>
+							<div class="bubble me">
+								... about who we used to be.
+							</div>
+							<div class="bubble me">
+								Are you serious?
+							</div>
+							<div class="bubble you">
+								When we were younger and free...
+							</div>
+							<div class="bubble you">
+								I've forgotten how it felt before
+							</div>
+						</div>
+						<div class="chat" data-chat="person3">
+							<div class="conversation-start">
+								<span>Today, 3:38 AM</span>
+							</div>
+							<div class="bubble you">
+								Hey human!
+							</div>
+							<div class="bubble you">
+								Umm... Someone took a shit in the hallway.
+							</div>
+							<div class="bubble me">
+								... what.
+							</div>
+							<div class="bubble me">
+								Are you serious?
+							</div>
+							<div class="bubble you">
+								I mean...
+							</div>
+							<div class="bubble you">
+								It’s not that bad...
+							</div>
+							<div class="bubble you">
+								But we’re probably gonna need a new carpet.
+							</div>
+						</div>
+						<div class="chat" data-chat="person4">
+							<div class="conversation-start">
+								<span>Yesterday, 4:20 PM</span>
+							</div>
+							<div class="bubble me">
+								Hey human!
+							</div>
+							<div class="bubble me">
+								Umm... Someone took a shit in the hallway.
+							</div>
+							<div class="bubble you">
+								... what.
+							</div>
+							<div class="bubble you">
+								Are you serious?
+							</div>
+							<div class="bubble me">
+								I mean...
+							</div>
+							<div class="bubble me">
+								It’s not that bad...
+							</div>
+						</div>
+						<div class="chat" data-chat="person5">
+							<div class="conversation-start">
+								<span>Today, 6:28 AM</span>
+							</div>
+							<div class="bubble you">
+								Wasup
+							</div>
+							<div class="bubble you">
+								Wasup
+							</div>
+							<div class="bubble you">
+								Wasup for the third time like is <br />you blind bitch
+							</div>
+
+						</div>
+						<div class="chat" data-chat="person6">
+							<div class="conversation-start">
+								<span>Monday, 1:27 PM</span>
+							</div>
+							<div class="bubble you">
+								So, how's your new phone?
+							</div>
+							<div class="bubble you">
+								You finally have a smartphone :D
+							</div>
+							<div class="bubble me">
+								Drake?
+							</div>
+							<div class="bubble me">
+								Why aren't you answering?
+							</div>
+							<div class="bubble you">
+								howdoyoudoaspace
+							</div>
+						</div>
+						<div class="write">
+							<a href="javascript:;" class="write-link attach"></a>
+							<input type="text" />
+							<a href="javascript:;" class="write-link smiley"></a>
+							<a href="javascript:;" class="write-link send"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section style="padding: 10px 0 40px;">
+		<div class="inner">
+			<h3 class="types-title" id="types-title">
+				<b>财</b>／<b>富</b>／<b>大</b>／<b>魔</b>／<b>方</b>
+				<a href="javascript:;" class="types-title-more" target="_blank"> <span>查看更多</span>
+				</a>
+			</h3>
+			<div class="uldiv">
+				<div class="scrollcontainer">
+					<ul>
+						<li>
+							<ul class="live_list">
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851289593249.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851289593249.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851289593249.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851289593249.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851289593249.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<a href="https:.html?videoMark=" target="" class="figure">
+										<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+											style="visibility: visible;">
+										<div class="figure_caption">
+											2019-04-20<span>01:07:00</span>
+										</div>
+										<div class="mark_v">新视频</div>
+									</a>
+									<div class="figure_detail">
+										<a href="https:.html?videoMark=" class="figure_title" title=""
+											target=" ">5.6新视频中午12点39</a>
+										<div class="figure_desc" title="新视频">新视频</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="inner"><iframe class="my_footer" src="footer.html"></iframe></div>
+	</footer>
+
+	<script>
+		document.querySelector('.chat[data-chat=person2]').classList.add('active-chat');
+		document.querySelector('.person[data-chat=person2]').classList.add('active');
+
+		var friends = {
+			list: document.querySelector('ul.people'),
+			all: document.querySelectorAll('.left .person'),
+			name: ''
+		},
+
+			chat = {
+				container: document.querySelector('.container .right'),
+				current: null,
+				person: null,
+				name: document.querySelector('.container .right .top .name')
+			};
+
+
+		friends.all.forEach(function (f) {
+			f.addEventListener('mousedown', function () {
+				f.classList.contains('active') || setAciveChat(f);
+			});
+		});
+
+		function setAciveChat(f) {
+			friends.list.querySelector('.active').classList.remove('active');
+			f.classList.add('active');
+			chat.current = chat.container.querySelector('.active-chat');
+			chat.person = f.getAttribute('data-chat');
+			chat.current.classList.remove('active-chat');
+			chat.container.querySelector('[data-chat="' + chat.person + '"]').classList.add('active-chat');
+			friends.name = f.querySelector('.name').innerText;
+			chat.name.innerHTML = friends.name;
+		}
+	</script>
+	<script type="text/javascript" src="js/jquery.comment.js"></script>
+	<script type="text/javascript">
+		//初始化数据
+		var arr = [{
+			id: 1,
+			img: "img/index/1tpic.jpg",
+			replyName: "帅大叔",
+			beReplyName: "匿名",
+			content: "各国专家认为，依据国内法来对别国实施经济金融制裁以达到自身目的，这种“长臂管辖”已成为美国在国际上推行霸权主义和强权政治的惯用伎俩。但制裁的大棒挥舞得越凶，反对美国霸凌的国家也会越多，手伸得太长的美国终将搬起石头砸自己的脚。",
+			time: "2017-10-17 11:42:53",
+			address: "深圳",
+			osname: "",
+			browse: "谷歌",
+			replyBody: []
+		},
+		{
+			id: 2,
+			img: "img/index/1tpic.jpg",
+			replyName: "匿名",
+			beReplyName: "",
+			content: "在近期股市大幅回调之后，转债的转股溢价率已经低于30%，位于历史平均值之下，而转债的平均到期收益率已经超过1%，在当前股市估值处于历史低位的背景下，转债攻守兼备，具有较高的配置价值。”",
+			time: "2017-10-17 11:42:53",
+			address: "深圳",
+			osname: "",
+			browse: "谷歌",
+			replyBody: [{
+				id: 3,
+				img: "",
+				replyName: "帅大叔",
+				beReplyName: "匿名",
+				content: "来啊，我们一起",
+				time: "2017-10-17 11:42:53",
+				address: "",
+				osname: "",
+				browse: "谷歌"
+			}]
+		},
+		{
+			id: 3,
+			img: "img/index/1tpic.jpg",
+			replyName: "帅大叔",
+			beReplyName: "匿名",
+			content: "华为26日给观察者网回复，称华为现在和未来提供的产品和服务，不会受个别违背透明、公开、公正、无歧视原则的组织和其行为的影响。",
+			time: "2017-10-17 11:42:53",
+			address: "深圳",
+			osname: "win10",
+			browse: "谷歌",
+			replyBody: []
+		}
+		];
+
+		$(function () {
+			$(".comment-list").addCommentList({
+				data: arr,
+				add: ""
+			});
+			$("#comment").click(function () {
+				var obj = new Object();
+				obj.img = "img/index/1tpic.jpg";
+				obj.replyName = "Ghost";
+				obj.content = $("#content").val();
+				obj.browse = "深圳";
+				obj.osname = "win10";
+				obj.replyBody = "";
+				$(".comment-list").addCommentList({
+					data: [],
+					add: obj
+				});
+			});
+		})
+	</script>
+	<script>
+		$(function () {
+			var emojipic = {
+				face: function (_this) {
+					var target = $(_this).html();
+					if (target.length < 5) {
+						$(_this).html("<img src='img/face/" + target + ".gif' />")
+					}
+				},
+				faceimg: '',
+				imgs: function (min, max) {
+					for (i = min; i < max; i++) { //通过循环创建60个表情，可扩展
+						emojipic.faceimg += '<li><a href="javascript:void(0)"><img src="img/face/' + (i +
+							1) + '.gif" face="<emt>' + (i + 1) + '</emt>"/></a></li>';
+					};
+				},
+				cur: 0
+			}
+			$('emt').each(function () {
+				emojipic.face(this);
+			});
+			$(' a.btn-comment').on('click', function () {
+				var content = $('textarea').val();
+				if (!content) {
+					alert('发布内容不能为空');
+					$('textarea').focus();
+					return false;
+				}
+				/*
+					$('.commentbox').append("<li>" + content + "</li>");
+				*/
+				$('textarea').val('');
+				$('emt').each(function () {
+					var target = $(this).html();
+					if (target.length < 5) {
+						$(this).html("<img src='img/face/" + target + ".gif' />")
+					}
+				});
+			});
+			$('.faces').on('click', function () {
+				if (emojipic.cur == 0) {
+					$(this).addClass('on');
+					emojipic.cur = 1;
+					$('.face').show(0);
+				} else if (emojipic.cur == 1) {
+					$(this).removeClass('on');
+					$('.face').hide(0);
+					emojipic.cur = 0;
+				}
+			})
+			emojipic.imgs(0, 60);
+			$('.face').append(emojipic.faceimg);
+			$('.face li img').on('click', function () {
+				var target = $(this).attr('face');
+				var htmls = $('.commentbox textarea').val();
+				$('.commentbox textarea').val(htmls + target);
+				$(this).parents('.face').hide(0);
+				$('.commentbox .faces').removeClass('on');
+				emojipic.cur = 0;
+			})
+		})
+	</script>
+	<script>
+		console.log(" %c 该项目基于Dplayer.js", 'color:red')
+		var dp = new DPlayer({
+			element: document.getElementById('player1'),
+			video: {
+				url: 'http://vod.maxtv.cn/finance/20170306/20170306-96949150-780-2365.mp4',
+				pic: 'img/index/ssjt.png'
+			},
+			danmaku: {
+				id: 'demo',
+				api: 'https://api.prprpr.me/dplayer/',
+				addition: ['https://api.prprpr.me/dplayer/bilibili?aid=15572523']
+			}
+		});
+		// 弹出框
+		function alert_back(text) {
+			$(".alert_back").html(text).show();
+			setTimeout(function () {
+				$(".alert_back").fadeOut();
+			}, 1200)
+		}
+		//秒转分秒
+		function formatTime(seconds) {
+			return [
+				//            parseInt(seconds / 60 / 60),
+				parseInt(seconds / 60 % 60),
+				parseInt(seconds % 60)
+			]
+				.join(":")
+				.replace(/\b(\d)\b/g, "0$1");
+		}
+		$.ajax({
+			url: "https://api.prprpr.me/dplayer/bilibili?aid=15572523",
+			success: function (data) {
+				if (data.code == "1") {
+					var danmaku = data.danmaku;
+					var autor = "农民";
+					$(".danmuku_num").text(danmaku.length)
+					$(danmaku).each(function (index, item) {
+						if (item.type == "right") { } else {
+							autor = "地主"
+						}
+						var oLi = `   <ol class="danmuku_list" time="${item.time}">
+				<li>${formatTime(item.time)}</li>
+				<li title="${item.text}">${item.text}</li>
+				<li>${autor}</li>
+	</ol>
+	`
+						$(".list_ovefiow").append(oLi);
+						autor = "农民";
+					})
+				} else {
+					alert_back("弹幕加载失败 -v-!");
+				}
+				$(".danmuku_list").on("click", function () {
+
+					dp.seek($(this).attr("time"))
+				})
+			}
+		})
+	</script>
+</body>
+
+</html>

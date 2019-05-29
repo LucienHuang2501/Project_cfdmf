@@ -1,0 +1,357 @@
+.player {
+    margin: 20px auto;
+    padding: 20px 0 100px;
+    background: rgb(37, 33, 41) linear-gradient(to top, rgba(40, 39, 48, 0.3) 0%, rgba(36, 21, 59, 0.4) 100%);
+}
+
+.Dplayer_box {
+    overflow: hidden;
+    width: 1190px;
+    height: 530px;
+    margin: 0 auto;
+    display: block;
+    background-color: #06080a
+}
+
+#player1 {
+    height: 500px;
+    background-size: 100% 100%;
+    margin-top: 30px;
+}
+
+.player_av {
+    width: 890px;
+    height: 100%;
+    float: left;
+    background: #000
+}
+
+.Dplayer_danmu {
+    width: 299px;
+    float: right;
+    height: 100%
+}
+
+.Dplayer_watching {
+    width: 100%;
+    height: 59px;
+    line-height: 59px;
+    display: inline-block;
+    font-size: 12px;
+    color: #99a2aa;
+    border-bottom: 1px solid #06080a;
+}
+
+.Dplayer-watching-number {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ddd;
+    padding: 0
+}
+
+.Dplayer_list {
+    width: 100%;
+    height: 30px;
+    overflow: hidden
+}
+
+.Dplayer_list li {
+    width: 60px;
+    height: 30px;
+    float: left;
+    color: #99a2aa;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px
+}
+
+.Dplayer_list li:nth-child(1) {
+    width: 58px!important
+}
+
+.Dplayer_list li:nth-child(2) {
+    width: 136px!important
+}
+
+.list_ovefiow {
+    width: 100%;
+    height: 363px;
+    overflow: auto
+}
+
+.danmuku_list {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #99a2aa;
+    font-size: 12px;
+    display: block;
+    margin: auto;
+    overflow: auto;
+    margin-top: 5px
+}
+
+.danmuku_list li {
+    float: left;
+    width: 60px;
+    height: 20px;
+    white-space: nowrap;
+    cursor: pointer
+}
+
+.danmuku_list li:nth-child(1) {
+    width: 58px;
+    margin-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.danmuku_list li:nth-child(2) {
+    width: 125px;
+    margin-right: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.danmuku_list li:nth-child(2):hover {
+    color: #00a1d6
+}
+
+.danmuku_list li:nth-child(3) {
+    margin-left: 5px
+}
+
+.animation_opactiy {
+    animation: backOpacity 0.6s ease-in-out;
+}
+
+@keyframes backOpacity {
+    0% {
+        opacity: 0.6
+    }
+    50% {
+        opacity: .8
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ell_two_line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.hide {
+    display: none!important;
+}
+
+.show {
+    display: block;
+}
+
+.back_img {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin {
+    margin: 0 auto;
+}
+
+.alert_back {
+    display: none;
+    padding: 6px 26px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #fff;
+    background: rgba(0, 0, 0, .8);
+    white-space: nowrap;
+    border-radius: 4px;
+    position: absolute;
+    top: 68%;
+    left: 40%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/*select*/
+
+::-webkit-selection {
+    background: #888888;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #888888;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #69d1f7;
+    color: #fff;
+    text-shadow: none;
+    font: 16px 'Microsoft YaHei', Arial, Lucida Grande, Tahoma, sans-serif;
+}
+
+.copyrightzh, .copyrighten {
+    font-size: 12px!important;
+}
+
+/*评论*/
+
+.commentbox {
+    width: 890px;
+    float: left;
+    margin: 20px 0;
+}
+
+.btn-comment {
+    display: block;
+    float: left;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 4px;
+    width: 60px;
+    height: 25px;
+    margin-top: 5px;
+    background: linear-gradient(45deg, rgba(255, 43, 61, 0.9) 0%, rgba(199, 7, 7, 0.8));
+}
+
+.mytextarea {
+    width: 100%;
+    overflow: auto;
+    word-break: break-all;
+    height: 100px;
+    padding: 10px;
+    color: #000;
+    resize: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.comment-list {
+    width: 890px;
+    float: left;
+    clear: both;
+    padding-top: 20px;
+}
+
+.comment-list .comment-info {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment-list .comment-info header {
+    background:#f5f5f5;
+    width: 10%;
+    position: absolute;
+}
+
+.comment-list .comment-info header img {
+    width: 60%;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.comment-list .comment-info .comment-right {
+    padding: 5px 0px 5px 11%;
+}
+
+.comment-list .comment-info .comment-right h3 {
+    margin: 5px 0px;
+}
+
+.comment-list .comment-info .comment-right .comment-content-header {
+    height: 25px;
+}
+
+.comment-list .comment-info .comment-right .comment-content-header span, .comment-list .comment-info .comment-right .comment-content-footer span {
+    padding-right: 2em;
+    color: #aaa;
+}
+
+.comment-list .comment-info .comment-right .comment-content-header span, .comment-list .comment-info .comment-right .comment-content-footer span.reply-btn, .send, .reply-list-btn {
+    cursor: pointer;
+}
+
+.comment-list .comment-info .comment-right .reply-list {
+    border-left: 3px solid #ccc;
+    padding-left: 7px;
+}
+
+.comment-list .comment-info .comment-right .reply-list .reply {
+    border-bottom: 1px dashed #ccc;
+}
+
+.comment-list .comment-info .comment-right .reply-list .reply div span {
+    padding-left: 10px;
+}
+
+.comment-list .comment-info .comment-right .reply-list .reply p span {
+    padding-right: 2em;
+    color: #aaa;
+}
+
+.w500 {
+    width: 566px;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    right: 284px;
+    top: 180px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px 0 rgba(8, 11, 26, 0.4);
+    z-index: 1000;
+}
+
+.on {
+    background-position: left bottom;
+}
+
+.faces {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: block;
+    float: right;
+    background: rgb(253, 224, 127) url(../img/faces.png);
+    background-position: 0 2px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.face {
+    overflow: hidden;
+    display: none;
+}
+
+.face li {
+    width: 22px;
+    height: 22px;
+    margin: 3px;
+    float: left;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CFDMF</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+</head>
+<body>
+	<header>
+		<div class="inner">
+			<div class="logo">
+				<img src="images/logo.png">
+			</div>
+			<nav>
+				<ul type="none">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">财服急送</a></li>
+					<li><a href="#">名师殿堂</a></li>
+					<li><a href="#">财富世界</a></li>
+					<li><a href="#">合作栏目</a></li>
+					<li><a href="#">有问必答</a></li>
+					<li><a href="#">影视栏目</a></li>
+					<li><a href="#">音乐娱乐</a></li>
+				</ul>
+			</nav>
+			<div class="header_r">
+				<div class="my_focus">我的关注</div>
+				<div class="user_info">
+					<a href="#">
+						<img src="">
+						<span>用户名</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="inner">
+		<section class="banner_top">
+			<img src="images/154201428931197.jpg">
+		</section>
+		<section class="">
+			<video></video>
+		</section>
+	</div>
+	
+	<footer>
+		<div class="inner">
+			<div class="cooperation">
+				<div>合作伙伴</div>
+				ul
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
