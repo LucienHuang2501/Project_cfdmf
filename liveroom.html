@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>CFDMF-login</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/public.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="css/liveroom.css">
+		<link rel="stylesheet" href="css/DPlayer.min.css">
+		<style>
+			h3 span{
+				color: #666;
+			}
+			.figure_title{
+				color: #333 !important;
+			}
+		</style>
+
+		<script src="js/jquery-3.2.1.js"></script>
+	</head>
+
+	<body>
+		<header><iframe class="my_header" src="header.html"></iframe></header>
+		<section class="player">
+				<div class="Dplayer_box">
+					<div class="player_av">
+						<div id="player1"></div>
+					</div>
+
+					<div class="Dplayer_danmu">
+						<div class="Dplayer_watching">
+							<span class="Dplayer-watching-number" title="这个数据是假的">2160</span>
+							人正在观看,<span class="danmuku_num">536</span>条弹幕
+						</div>
+
+						<ul class="Dplayer_list">
+							<li>时间</li>
+							<li>发送内容</li>
+							<li>用户类型</li>
+						</ul>
+						<ul class="list_ovefiow">
+
+						</ul>
+
+					</div>
+				</div>
+				<div class="alert_back">加载中</div>
+		</section>
+		<section class="container">
+			<div class="inner" style="position: relative">
+				<div class="commentbox">
+					<textarea cols="80" rows="50" placeholder="来说几句吧......" class="mytextarea" id="content"></textarea>
+					<a class="btn-comment" id="comment">评论</a>
+					<a href="javascript:;" class='faces'></a>
+				</div>
+				<div class="face w500"></div>
+				<div class="comment-list">
+				</div>
+			</div>
+		</section>
+		
+		<section style="padding: 10px 0 40px;">
+			<div class="inner">
+				<h3 class="types-title" style="color: #333 !important;">
+					<b>财</b>／<b>富</b>／<b>大</b>／<b>魔</b>／<b>方</b>
+					<a href="javascript:;" class="types-title-more" target="_blank"> <span>查看更多</span>
+					</a>
+				</h3>
+				<div class="uldiv">
+					<div class="scrollcontainer">
+						<ul>
+							<li>
+								<ul class="live_list">
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851289593249.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851289593249.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851289593249.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851289593249.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851289593249.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+									<li class="list_item">
+										<a href="https:.html?videoMark=" target="" class="figure">
+											<img class="figure_pic" alt="" src="img/videopic/155851278843048.jpg"
+												style="visibility: visible;">
+											<div class="figure_caption">
+												2019-04-20<span>01:07:00</span>
+											</div>
+											<div class="mark_v">新视频</div>
+										</a>
+										<div class="figure_detail">
+											<a href="https:.html?videoMark=" class="figure_title" title=""
+												target=" ">5.6新视频中午12点39</a>
+											<div class="figure_desc" title="新视频">新视频</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="inner"><iframe class="my_footer" src="footer.html"></iframe></div>
+		</footer>
+
+		<script src="js/DPlayer.min.js"></script>
+		<script type="text/javascript" src="js/jquery.comment.js"></script>
+		<script type="text/javascript">
+			//初始化数据
+			var arr = [{
+					id: 1,
+					img: "img/index/1tpic.jpg",
+					replyName: "帅大叔",
+					beReplyName: "匿名",
+					content: "同学聚会，看到当年追我的屌丝开着宝马车带着他老婆来了，他老婆是我隔壁宿舍的同班同学，心里后悔极了。",
+					time: "2017-10-17 11:42:53",
+					address: "深圳",
+					osname: "",
+					browse: "谷歌",
+					replyBody: []
+				},
+				{
+					id: 2,
+					img: "img/index/1tpic.jpg",
+					replyName: "匿名",
+					beReplyName: "",
+					content: "到菜市场买菜，看到一个孩子在看摊，我问：“一只鸡多少钱？” 那孩子回答：“23。” 我又问：“两只鸡多少钱？” 孩子愣了一下，一时间没算过来，急中生智大吼一声：“一次只能买一只！”",
+					time: "2017-10-17 11:42:53",
+					address: "深圳",
+					osname: "",
+					browse: "谷歌",
+					replyBody: [{
+						id: 3,
+						img: "",
+						replyName: "帅大叔",
+						beReplyName: "匿名",
+						content: "来啊，我们一起",
+						time: "2017-10-17 11:42:53",
+						address: "",
+						osname: "",
+						browse: "谷歌"
+					}]
+				},
+				{
+					id: 3,
+					img: "img/index/1tpic.jpg",
+					replyName: "帅大叔",
+					beReplyName: "匿名",
+					content: "同学聚会，看到当年追我的屌丝开着宝马车带着他老婆来了，他老婆是我隔壁宿舍的同班同学，心里后悔极了。",
+					time: "2017-10-17 11:42:53",
+					address: "深圳",
+					osname: "win10",
+					browse: "谷歌",
+					replyBody: []
+				}
+			];
+
+			$(function () {
+				$(".comment-list").addCommentList({
+					data: arr,
+					add: ""
+				});
+				$("#comment").click(function () {
+					var obj = new Object();
+					obj.img = "img/index/1tpic.jpg";
+					obj.replyName = "Ghost";
+					obj.content = $("#content").val();
+					obj.browse = "深圳";
+					obj.osname = "win10";
+					obj.replyBody = "";
+					$(".comment-list").addCommentList({
+						data: [],
+						add: obj
+					});
+				});
+			})
+		</script>
+		<script>
+			$(function () {
+				var emojipic = {
+					face: function (_this) {
+						var target = $(_this).html();
+						if (target.length < 5) {
+							$(_this).html("<img src='img/face/" + target + ".gif' />")
+						}
+					},
+					faceimg: '',
+					imgs: function (min, max) {
+						for (i = min; i < max; i++) { //通过循环创建60个表情，可扩展
+							emojipic.faceimg += '<li><a href="javascript:void(0)"><img src="img/face/' + (i +
+								1) + '.gif" face="<emt>' + (i + 1) + '</emt>"/></a></li>';
+						};
+					},
+					cur: 0
+				}
+				$('emt').each(function () {
+					emojipic.face(this);
+				});
+				$(' a.btn-comment').on('click', function () {
+					var content = $('textarea').val();
+					if (!content) {
+						alert('发布内容不能为空');
+						$('textarea').focus();
+						return false;
+					}
+				/*
+					$('.commentbox').append("<li>" + content + "</li>");
+				*/
+					$('textarea').val('');
+					$('emt').each(function () {
+						var target = $(this).html();
+						if (target.length < 5) {
+							$(this).html("<img src='img/face/" + target + ".gif' />")
+						}
+					});
+				});
+				$('.faces').on('click', function () {
+					if (emojipic.cur == 0) {
+						$(this).addClass('on');
+						emojipic.cur = 1;
+						$('.face').show(0);
+					} else if (emojipic.cur == 1) {
+						$(this).removeClass('on');
+						$('.face').hide(0);
+						emojipic.cur = 0;
+					}
+				})
+				emojipic.imgs(0, 60);
+				$('.face').append(emojipic.faceimg);
+				$('.face li img').on('click', function () {
+					var target = $(this).attr('face');
+					var htmls = $('.commentbox textarea').val();
+					$('.commentbox textarea').val(htmls + target);
+					$(this).parents('.face').hide(0);
+					$('.commentbox .faces').removeClass('on');
+					emojipic.cur = 0;
+				})
+			})
+		</script>
+		<script>
+			console.log(" %c 该项目基于Dplayer.js", 'color:red')
+			var dp = new DPlayer({
+				element: document.getElementById('player1'),
+				video: {
+					url: 'http://vod.maxtv.cn/finance/20170306/20170306-96949150-780-2365.mp4',
+					pic: 'img/index/ssjt.png'
+				},
+				danmaku: {
+					id: 'demo',
+					api: 'https://api.prprpr.me/dplayer/',
+					addition: ['https://api.prprpr.me/dplayer/bilibili?aid=15572523']
+				}
+			});
+			// 弹出框
+			function alert_back(text) {
+				$(".alert_back").html(text).show();
+				setTimeout(function () {
+					$(".alert_back").fadeOut();
+				}, 1200)
+			}
+			//秒转分秒
+			function formatTime(seconds) {
+				return [
+						//            parseInt(seconds / 60 / 60),
+						parseInt(seconds / 60 % 60),
+						parseInt(seconds % 60)
+					]
+					.join(":")
+					.replace(/\b(\d)\b/g, "0$1");
+			}
+			$.ajax({
+				url: "https://api.prprpr.me/dplayer/bilibili?aid=15572523",
+				success: function (data) {
+					if (data.code == "1") {
+						var danmaku = data.danmaku;
+						var autor = "农民";
+						$(".danmuku_num").text(danmaku.length)
+						$(danmaku).each(function (index, item) {
+							if (item.type == "right") {} else {
+								autor = "地主"
+							}
+							var oLi = `   <ol class="danmuku_list" time="${item.time}">
+				<li>${formatTime(item.time)}</li>
+				<li title="${item.text}">${item.text}</li>
+				<li>${autor}</li>
+	</ol>
+	`
+							$(".list_ovefiow").append(oLi);
+							autor = "农民";
+						})
+					} else {
+						alert_back("弹幕加载失败 -v-!");
+					}
+					$(".danmuku_list").on("click", function () {
+
+						dp.seek($(this).attr("time"))
+					})
+				}
+			})
+		</script>
+	</body>
+
+</html>
